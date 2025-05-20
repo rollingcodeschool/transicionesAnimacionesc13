@@ -23,3 +23,15 @@ main{
 .cambioColor:hover{
     background-color: #9353e0
 }
+
+/* ejemplo cambio de tamaño de tipografia */
+
+.parrafoGrande{
+    font-size: 1rem;
+    transition: font-size 500ms ease-out;
+}
+
+.parrafoGrande:hover{
+   font-size: 1.5rem;
+   cursor: pointer;
+}
