@@ -35,3 +35,17 @@ main{
    font-size: 1.5rem;
    cursor: pointer;
 }
+
+.opacidad{
+    background-color: lightskyblue;
+    width: 200px;
+    height: 100px;
+    color: black;
+    opacity: 0.5;
+    transition: opacity 200ms ease-in;
+}
+
+.opacidad:hover{
+     opacity:1;
+     cursor: pointer;
+}
