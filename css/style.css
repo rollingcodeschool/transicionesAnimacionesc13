@@ -7,3 +7,19 @@ body{
 main{
     flex-grow: 1;
 }
+
+/* ejemplo de transicion de color de fondo */
+.cambioColor{
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+    color: black;
+    transition-property: background-color;
+    transition-duration: 300ms; 
+    transition-timing-function: linear;
+    /* transition-delay: 1s; */
+}
+
+.cambioColor:hover{
+    background-color: #9353e0
+}
