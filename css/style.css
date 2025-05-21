@@ -42,10 +42,32 @@ main{
     height: 100px;
     color: black;
     opacity: 0.5;
-    transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in, background-color 200ms linear;
 }
 
 .opacidad:hover{
      opacity:1;
      cursor: pointer;
+      background-color: rgb(223, 250, 135);
+}
+
+.texto-subrayado{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.texto-subrayado::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 3px;
+    width: 0;
+    background-color: #46b8ed;
+    transition: width 500ms linear;
+}
+
+.texto-subrayado:hover::after{
+    width: 100%;
 }
