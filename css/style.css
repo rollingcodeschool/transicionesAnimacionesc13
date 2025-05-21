@@ -1,73 +1,96 @@
-body{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-main{
-    flex-grow: 1;
+main {
+  flex-grow: 1;
 }
 
 /* ejemplo de transicion de color de fondo */
-.cambioColor{
-    width: 200px;
-    height: 200px;
-    background-color: tomato;
-    color: black;
-    transition-property: background-color;
-    transition-duration: 300ms; 
-    transition-timing-function: linear;
-    /* transition-delay: 1s; */
+.cambioColor {
+  width: 200px;
+  height: 200px;
+  background-color: tomato;
+  color: black;
+  transition-property: background-color;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+  /* transition-delay: 1s; */
 }
 
-.cambioColor:hover{
-    background-color: #9353e0
+.cambioColor:hover {
+  background-color: #9353e0;
 }
 
 /* ejemplo cambio de tamaño de tipografia */
 
-.parrafoGrande{
-    font-size: 1rem;
-    transition: font-size 500ms ease-out;
+.parrafoGrande {
+  font-size: 1rem;
+  transition: font-size 500ms ease-out;
 }
 
-.parrafoGrande:hover{
-   font-size: 1.5rem;
-   cursor: pointer;
+.parrafoGrande:hover {
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
-.opacidad{
-    background-color: lightskyblue;
-    width: 200px;
-    height: 100px;
-    color: black;
-    opacity: 0.5;
-    transition: opacity 200ms ease-in, background-color 200ms linear;
+.opacidad {
+  background-color: lightskyblue;
+  width: 200px;
+  height: 100px;
+  color: black;
+  opacity: 0.5;
+  transition: opacity 200ms ease-in, background-color 200ms linear;
 }
 
-.opacidad:hover{
-     opacity:1;
-     cursor: pointer;
-      background-color: rgb(223, 250, 135);
+.opacidad:hover {
+  opacity: 1;
+  cursor: pointer;
+  background-color: rgb(223, 250, 135);
 }
 
-.texto-subrayado{
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
+.texto-subrayado {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
 }
 
-.texto-subrayado::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    height: 3px;
-    width: 0;
-    background-color: #46b8ed;
-    transition: width 500ms linear;
+.texto-subrayado::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 3px;
+  width: 0;
+  background-color: #46b8ed;
+  transition: width 500ms linear;
 }
 
-.texto-subrayado:hover::after{
-    width: 100%;
+.texto-subrayado:hover::after {
+  width: 100%;
+}
+
+/* ejemplos de animaciones */
+
+.movimiento {
+  width: 200px;
+  height: 80px;
+  animation-name: desplazamiento;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes desplazamiento {
+  from {
+    /* animacion al inicio */
+    transform: translateX(0);
+  }
+  to {
+    /* animacion al final */
+     transform: translateX(200px);
+  }
 }
