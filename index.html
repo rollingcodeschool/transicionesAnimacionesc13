@@ -80,68 +80,161 @@
       <h1 class="display-4">Transiciones y Animaciones con CSS</h1>
       <section class="mt-3">
         <h2>Transiciones con CSS</h2>
-        <p>Permiten cambiar suavemente una propiedad CSS de un estado a otro durante un período de tiempo</p>
+        <p>
+          Permiten cambiar suavemente una propiedad CSS de un estado a otro
+          durante un período de tiempo
+        </p>
         <h3>Propiedades de las transiciones</h3>
         <ul>
           <li>transition-property: Define qué propiedad cambiar</li>
           <li>transition-duration: Define la duración del cambio. (s o ms)</li>
-          <li>transition-timing-function: Controla la aceleración o desaceleración.
+          <li>
+            transition-timing-function: Controla la aceleración o
+            desaceleración.
             <ul>
               <li>linear → Velocidad constante.</li>
-              <li>ease (por defecto) → Comienza lenta, acelera y luego desacelera.</li>
+              <li>
+                ease (por defecto) → Comienza lenta, acelera y luego desacelera.
+              </li>
               <li>ease-in → Comienza lenta y acelera.</li>
               <li>ease-out → Comienza rápida y desacelera.</li>
               <li>ease-in-out → Comienza y termina lenta</li>
             </ul>
           </li>
-          <li>
-            transition-delay: Retrasa el inicio de la transición.
-          </li>
+          <li>transition-delay: Retrasa el inicio de la transición.</li>
         </ul>
         <article>
           <h2>Transicion de color de fondo</h2>
-          <p>La transición de color de fondo en CSS permite cambiar suavemente el color de fondo de un elemento cuando se activa un cambio de estado, como un :hover. Esto crea un efecto visual agradable y fluido que mejora la experiencia del usuario al interactuar con la página. Por ejemplo, al pasar el cursor sobre un botón, su color de fondo puede cambiar de azul a rojo, atrayendo la atención del usuario sin ser abrupto.</p>
-          <div class="border d-flex justify-content-center align-items-center cambioColor">
+          <p>
+            La transición de color de fondo en CSS permite cambiar suavemente el
+            color de fondo de un elemento cuando se activa un cambio de estado,
+            como un :hover. Esto crea un efecto visual agradable y fluido que
+            mejora la experiencia del usuario al interactuar con la página. Por
+            ejemplo, al pasar el cursor sobre un botón, su color de fondo puede
+            cambiar de azul a rojo, atrayendo la atención del usuario sin ser
+            abrupto.
+          </p>
+          <div
+            class="border d-flex justify-content-center align-items-center cambioColor"
+          >
             <p class="mb-0">cambio de color</p>
           </div>
         </article>
         <article class="mt-3">
           <h2>Transicion de tamaño de fuente</h2>
-          <p>La transición de tamaño de fuente facilita el cambio gradual del tamaño del texto de un elemento. Esto es útil para destacar elementos interactivos o importantes al aumentar su tamaño cuando se pasa el cursor sobre ellos. Por ejemplo, un párrafo de texto puede aumentar su tamaño de fuente cuando se sitúa el cursor sobre él, destacando su relevancia o indicando que es interactivo.</p>
-          <p class="parrafoGrande">Si pasas el mouse sobre este texto cambia de tamaño</p>
+          <p>
+            La transición de tamaño de fuente facilita el cambio gradual del
+            tamaño del texto de un elemento. Esto es útil para destacar
+            elementos interactivos o importantes al aumentar su tamaño cuando se
+            pasa el cursor sobre ellos. Por ejemplo, un párrafo de texto puede
+            aumentar su tamaño de fuente cuando se sitúa el cursor sobre él,
+            destacando su relevancia o indicando que es interactivo.
+          </p>
+          <p class="parrafoGrande">
+            Si pasas el mouse sobre este texto cambia de tamaño
+          </p>
         </article>
         <article class="mt3">
           <h2>Transicion de opacidad</h2>
-          <p>La transición de opacidad permite ajustar gradualmente la transparencia de un elemento. Esto es útil para efectos como desvanecimientos de entrada y salida, o para resaltar elementos al aumentar su opacidad. Por ejemplo, una imagen o un cuadro de texto puede pasar de ser semi-transparente a completamente opaco al situar el cursor sobre él, atrayendo la atención del usuario de manera sutil y elegante.</p>
-           <div class="border d-flex justify-content-center align-items-center opacidad">
+          <p>
+            La transición de opacidad permite ajustar gradualmente la
+            transparencia de un elemento. Esto es útil para efectos como
+            desvanecimientos de entrada y salida, o para resaltar elementos al
+            aumentar su opacidad. Por ejemplo, una imagen o un cuadro de texto
+            puede pasar de ser semi-transparente a completamente opaco al situar
+            el cursor sobre él, atrayendo la atención del usuario de manera
+            sutil y elegante.
+          </p>
+          <div
+            class="border d-flex justify-content-center align-items-center opacidad"
+          >
             <p class="mb-0">cambio de opacidad</p>
           </div>
         </article>
         <article class="mt-3">
           <h2>Transición de Posición</h2>
-          <p>La transición de posición permite mover suavemente un elemento de una ubicación a otra dentro de la página. Esto se utiliza a menudo para crear efectos de desplazamiento o para animar elementos en respuesta a interacciones del usuario.</p>
-          <p class="texto-subrayado">Pasa el mouse sobre este texto magico ✨</p>
+          <p>
+            La transición de posición permite mover suavemente un elemento de
+            una ubicación a otra dentro de la página. Esto se utiliza a menudo
+            para crear efectos de desplazamiento o para animar elementos en
+            respuesta a interacciones del usuario.
+          </p>
+          <p class="texto-subrayado">
+            Pasa el mouse sobre este texto magico ✨
+          </p>
         </article>
       </section>
       <section>
         <h2>Animaciones con CSS</h2>
-        <p>Permiten que los elementos cambien de estilo en varios estados definidos mediante @keyframes.</p>
+        <p>
+          Permiten que los elementos cambien de estilo en varios estados
+          definidos mediante @keyframes.
+        </p>
         <h3>Propiedades básicas de las animaciones</h3>
         <ul>
-          <li>animation-name: Especifica el nombre de la animación (definido en @keyframes).</li>
+          <li>
+            animation-name: Especifica el nombre de la animación (definido en
+            @keyframes).
+          </li>
           <li>animation-duration: Establece la duración de la animación.</li>
-          <li>animation-timing-function: Define la curva de velocidad de la animación.</li>
-          <li>animation-iteration-count: Indica cuántas veces se repetirá la animación.</li>
-          <li>animation-direction: Define si la animación debe invertirse en cada ciclo.</li>
-          <li>animation-fill-mode: Establece cómo se aplica el estilo a los elementos antes y después de la animación.</li>
+          <li>
+            animation-timing-function: Define la curva de velocidad de la
+            animación.
+          </li>
+          <li>
+            animation-iteration-count: Indica cuántas veces se repetirá la
+            animación.
+          </li>
+          <li>
+            animation-direction: Define si la animación debe invertirse en cada
+            ciclo.
+          </li>
+          <li>
+            animation-fill-mode: Establece cómo se aplica el estilo a los
+            elementos antes y después de la animación.
+          </li>
         </ul>
         <article>
           <h2>Animacion de movimiento</h2>
-          <p>La animación de movimiento en CSS utiliza la propiedad transform junto con @keyframes para mover elementos a lo largo del eje X o Y, creando un efecto de desplazamiento. Este tipo de animación es ideal para captar la atención del usuario y hacer que la interfaz sea más dinámica. Por ejemplo, un cuadro puede moverse horizontalmente de un lado a otro de la pantalla, lo que puede usarse para destacar información o guiar la mirada del usuario hacia un elemento importante.</p>
+          <p>
+            La animación de movimiento en CSS utiliza la propiedad transform
+            junto con @keyframes para mover elementos a lo largo del eje X o Y,
+            creando un efecto de desplazamiento. Este tipo de animación es ideal
+            para captar la atención del usuario y hacer que la interfaz sea más
+            dinámica. Por ejemplo, un cuadro puede moverse horizontalmente de un
+            lado a otro de la pantalla, lo que puede usarse para destacar
+            información o guiar la mirada del usuario hacia un elemento
+            importante.
+          </p>
+          <div
+            class="border movimiento d-flex justify-content-center align-items-center"
+          >
+            <p class="mb-0">Auto en movimiento 🚗</p>
+          </div>
         </article>
-        <div class="border movimiento d-flex justify-content-center align-items-center">
-          <p class="mb-0">Auto en movimiento 🚗</p>
-        </div>
+        <article class="mt-3">
+          <h2>Animación de Rotación</h2>
+          <p>
+            La animación de rotación permite que un elemento gire alrededor de
+            su centro, utilizando la propiedad transform: rotate() en
+            combinación con @keyframes. Este efecto es especialmente útil para
+            añadir dinamismo a elementos como iconos, botones o gráficos,
+            sugiriendo acción o cambio. Por ejemplo, un ícono de carga puede
+            rotar continuamente para indicar que un proceso está en curso, o un
+            elemento gráfico puede girar como parte de una animación decorativa.
+          </p>
+          <p class="mb-0 fs-1 parrafoRelojArena border rounded-1">⌛</p>
+        </article>
+        <article class="mt-3">
+          <h2>
+            Animación de Escala
+          </h2>
+          <p>La animación de escala modifica el tamaño de un elemento, haciéndolo crecer o encogerse mediante la propiedad transform: scale(). Esto puede utilizarse para enfatizar un elemento o indicar interactividad. Por ejemplo, un botón o una imagen puede ampliarse al pasar el cursor sobre él, sugiriendo que es clickeable o que tiene más información disponible. La animación de escala es eficaz para dirigir la atención del usuario de manera sutil pero efectiva.</p>
+          <div class="fs-1 escalarMundo ">🌎</div>
+          <div class="border contenedorCorazon d-flex justify-content-center align-items-center" >
+            <span class="fs-1 animarCorazon">❤</span>
+          </div>
+        </article>
       </section>
     </main>
     <footer class="bg-dark-subtle py-3 text-center">

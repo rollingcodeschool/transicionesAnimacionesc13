@@ -84,6 +84,26 @@ main {
   animation-direction: alternate;
 }
 
+/* animacion de rotacion */
+.parrafoRelojArena {
+  display: inline-block;
+  animation: girar 2s linear infinite;
+}
+
+.escalarMundo{
+  display: inline-block;
+  animation: escalar 1s ease-in-out infinite;
+}
+
+.contenedorCorazon{
+  width: 300px;
+  height: 250px;
+}
+
+.animarCorazon{
+  animation: escalarCorazon 2s ease infinite;
+}
+
 @keyframes desplazamiento {
   from {
     /* animacion al inicio */
@@ -91,6 +111,40 @@ main {
   }
   to {
     /* animacion al final */
-     transform: translateX(200px);
+    transform: translateX(200px);
   }
+}
+
+@keyframes girar {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes escalar {
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(1.9);
+  }
+}
+
+@keyframes escalarCorazon{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.5);
+  }
+  75%{
+    transform: scale(0.5);
+  }
+  100%{
+    transform: scale(1.5);
+  }
+
 }
