@@ -104,6 +104,49 @@ main {
   animation: escalarCorazon 2s ease infinite;
 }
 
+.areaDesplazamiento{
+  width: 350px;
+  height: 300px;
+}
+
+.circulo{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #46b8ed;
+  position: relative;
+  animation: movimientoComplejo 7s linear infinite;
+  transition: border-radius 400ms linear;
+}
+
+.circulo:hover{
+  border-radius: 0%;
+}
+
+@keyframes movimientoComplejo {
+  0%{
+    left: 0px;
+    top: 0px;
+  }
+  25%{
+    top: 0px;
+    left: 100px;
+  }
+  50%{
+    top: 100px;
+    left: 100px;
+  }
+  75%{
+    left: 0px;
+    top: 100px;
+  }
+  100%{
+    top: 0%;
+    left: 0%;
+  }
+}
+
+
 @keyframes desplazamiento {
   from {
     /* animacion al inicio */
